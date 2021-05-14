@@ -33,7 +33,7 @@ header h1{
     font-family: 'Mukta', sans-serif;
     font-weight: 800;
     font-size: 2rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
 }
 header div {
     display: flex;
@@ -72,7 +72,7 @@ main {
     font-family: 'Mukta', sans-serif;
     font-weight: 800;
     font-size: 6rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
     line-height: 120%;
     text-align: left;
 }
@@ -200,8 +200,51 @@ main {
 }
 .links_box li{
     list-style: none;
-    margin: 60px 0;
+    margin: 10px 0;
 }
+
+/* アニメーション */
+
+.box{
+    width: 100%;
+    min-height: 50px;
+    /* line-height: 150%; */
+    text-align: left;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px 10px;
+}
+.bd div{background: #333; position:absolute;-webkit-transition:all 0.141s;transition:all 0.141s;}
+.bd div.bdT{width: 100%; height:2px; top:0; left:0;}
+.bd div.bdB{width: 100%; height:2px; bottom:0; right:0;}
+.bd div.bdR{height:100%; width :2px; right:0; top:0;}
+.bd div.bdL{height:100%; width :2px; left:0; bottom:0;}
+
+.border_box div{background: none}
+.border_box div:before,.border_box div:after{content:''; background: #000; position: absolute;-webkit-transition:all 0.07s;transition:all 0.07s;}
+.border_box div:before{background: #eee}
+.border_box div.bdT:after,.border_box div.bdT:before{width: 0; height:2px; top:0; left:0;    }
+.border_box div.bdB:after,.border_box div.bdB:before{width: 0; height:2px; bottom:0; right:0;}
+.border_box div.bdR:after,.border_box div.bdR:before{height: 0; width :2px; right:0; top:0;   }
+.border_box div.bdL:after,.border_box div.bdL:before{height: 0; width :2px; left:0; bottom:0; }
+.border_box div.bdT:after{transition-delay:0.0s;}
+.border_box div.bdL:after{transition-delay:0.07s;}
+.border_box div.bdB:after{transition-delay:0.14s;}
+.border_box div.bdR:after{transition-delay:0.141s;}
+.border_box div.bdT:before{transition-delay:0.28s;}
+.border_box div.bdL:before{transition-delay:0.35s;}
+.border_box div.bdB:before{transition-delay:0.42s;}
+.border_box div.bdR:before{transition-delay:0.49s;}
+.box:hover .border_box div.bdT:after {width: 100%;transition-delay:0.49s;}
+.box:hover .border_box div.bdL:after {height:100%;transition-delay:0.42s;}
+.box:hover .border_box div.bdB:after {width: 100%;transition-delay:0.35s;}
+.box:hover .border_box div.bdR:after {height:100%;transition-delay:0.28s;}
+.box:hover .border_box div.bdT:before{width: 100%;transition-delay:0.141s;}
+.box:hover .border_box div.bdL:before{height:100%;transition-delay:0.14s;}
+.box:hover .border_box div.bdB:before{width: 100%;transition-delay:0.07s;}
+.box:hover .border_box div.bdR:before{height:100%;transition-delay:0.0s;}
+
 
 
 footer {

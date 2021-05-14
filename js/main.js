@@ -15,22 +15,22 @@ $(function() {
 
 $('#menu_text_0').click(function(){
     $("html,body").animate({
-        scrollTop:$('body').offset().top
+        scrollTop:$('body').offset().top - 100
     });
 });
 $('#menu_text_1').click(function(){
     $("html,body").animate({
-        scrollTop:$('.about_section').offset().top
+        scrollTop:$('.about_section').offset().top - 100
     });
 });
 $('#menu_text_2').click(function(){
     $("html,body").animate({
-        scrollTop:$('.works_section').offset().top
+        scrollTop:$('.works_section').offset().top - 100
     });
 });
 $('#menu_text_3').click(function(){
     $("html,body").animate({
-        scrollTop:$('.links_section').offset().top
+        scrollTop:$('.links_section').offset().top - 100
     });
 });
 
