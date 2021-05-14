@@ -13,7 +13,7 @@ $(function() {
 	});
 });
 
-$('#menu_text_0').click(function(){
+$('#menu_text_0, .go_to_top').click(function(){
     $("html,body").animate({
         scrollTop:$('body').offset().top - 100
     });
@@ -32,5 +32,22 @@ $('#menu_text_3').click(function(){
     $("html,body").animate({
         scrollTop:$('.links_section').offset().top - 100
     });
+});
+
+//上までスクロールの矢印
+$('.go_to_top').hover(function(){
+    $('.cursor_div').addClass('go_top');
+});
+$('.go_to_top').mouseout(function(){
+    $('.cursor_div').removeClass('go_top');
+});
+
+
+//アイコンホバー時
+$('.icon_svg, .menu_text').hover(function(){
+    $('.cursor_div').addClass('hide');
+});
+$('.icon_svg, .menu_text').mouseout(function(){
+    $('.cursor_div').removeClass('hide');
 });
 
