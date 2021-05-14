@@ -1,14 +1,155 @@
-body{
+body, html{
     margin: 0;
     text-align: center;
+    font-size: 10px;
+    color: #333;
+    font-family: 'Noto Sans', sans-serif;
+    letter-spacing: 0.05em;
 }
 
 header{
-    width: 100%;
+    width: 94%;
     display: flex;
     justify-content: space-between;
+    padding: 10px 3%;
+    height: 60px;
 }
 
 header h1{
     font-family: 'Mukta', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+}
+header div {
+    display: flex;
+    height: 60px;
+    align-items: center;
+}
+header div p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 1.6rem;
+    margin: 0 10px;
+    font-weight: 500;
+}
+
+
+
+
+main {
+    width: 500px;
+    margin: 0 auto;
+}
+
+
+.main_logo{
+    margin-top: 20vh;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo_image{
+    width: 200px;
+    height: 200px;
+}
+.main_logo p{
+    margin-left: 50px;
+    font-family: 'Mukta', sans-serif;
+    font-weight: 800;
+    font-size: 6rem;
+    letter-spacing: 0.1em;
+    text-align: left;
+}
+
+.sub_title{
+    font-size: 1.5rem;
+}
+
+.scroll_section{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 260px 0;
+
+}
+.scroll_section li{
+    list-style: none;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+.arrow{
+    height: 140px;
+}
+.sections {
+    width: 100%;
+    margin: 120px 0;
+    text-align: left;
+}
+.sections div h1{
+    font-size: 6.6rem;
+    -webkit-text-stroke: 1px #333;
+    color: transparent;
+    line-height: 100%;
+    margin-bottom: 0;
+}
+.sections div h2{
+    margin: 0 0 60px;
+    font-size: 6.6rem;
+    line-height: 100%;
+    color: #89DEFF;
+}
+
+/* ************* */
+/* about section */
+/* ************* */
+
+.about_text{
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.icons{
+    margin-top: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 26px;
+}
+.icon_svg {
+    margin-right: 30px;
+}
+
+
+
+/* ************* */
+/* link section  */
+/* ************* */
+
+.links_box{
+    width: 100%;
+    padding: 0;
+}
+.links_box a{
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+}
+.links_box li{
+    list-style: none;
+    margin: 60px 0;
+}
+
+
+footer {
+    margin-top: 300px;
+}
+footer p{
+    text-align: center;
+    font-size: 1.4rem;
+    color: #afafaf;
 }
