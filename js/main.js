@@ -51,3 +51,13 @@ $('.icon_svg, .menu_text').mouseout(function(){
     $('.cursor_div').removeClass('hide');
 });
 
+
+
+//Links hover
+// $('.links_li').hover(function(){
+//     $('.cursor_div').addClass('go_top');
+// });
+// $('.links_li').mouseout(function(){
+//     $('.cursor_div').removeClass('go_top');
+// });
+
