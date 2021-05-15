@@ -1,0 +1,68 @@
+body, html{
+    background: #161616;
+    color: #fff;
+}
+a{
+    color: #fff;
+}
+.language_grey{
+    color: #7D7D7D;
+}
+.scroll_to{
+    color: #7D7D7D;
+}
+.scroll_section li::after {
+    background: #A1E3FF;
+}
+
+.sections div h1{
+    -webkit-text-stroke: 1px #fff;
+}
+.sections div h2{
+    color: #89DEFF;
+}
+.icon_svg_fill{
+    fill: #fff;
+}
+.icon_svg:hover .icon_svg_fill {
+    fill: #89DEFF;
+}
+
+.links_box a{
+    color: #fff;
+}
+
+.box{
+    background: #161616;
+}
+.bd div{
+    background: #161616;
+}
+.border_box div:before,.border_box div:after{
+    background: #fff;
+}
+.border_box div:before{
+    background: rgb(49, 49, 49)
+}
+.go_to_top:hover {
+    background: #7D7D7D;
+    color: #161616;
+}
+
+footer p{
+    font-size: 1.4rem;
+    color: #7D7D7D;
+}
+.scroll_bar {
+    background-color: #7D7D7D;
+}
+.scroll_circle {
+    background-color: #fff;
+}
+
+.cursor_div{
+    background: #89DEFF;
+}
+.cursor_div.go_top .go_top_icon{
+    color: #ffffff;
+}
