@@ -111,7 +111,6 @@ main {
 
 .scroll_section li::after {
     content: '';
-    position: absolute;
     width: calc(100% + 20px);
     height: 1rem;
     background: #A1E3FF;
