@@ -11,9 +11,10 @@ a{
 .scroll_to{
     color: #7D7D7D;
 }
-/* .scroll_section li::after {
+.scroll_section li::after {
     background: #A1E3FF;
-} */
+    opacity: .7;
+}
 
 .sections div h1{
     -webkit-text-stroke: 1px #fff;
