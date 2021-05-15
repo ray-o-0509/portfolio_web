@@ -54,10 +54,19 @@ $('.icon_svg, .menu_text').mouseout(function(){
 
 
 //Links hover
-// $('.links_li').hover(function(){
-//     $('.cursor_div').addClass('go_top');
-// });
-// $('.links_li').mouseout(function(){
-//     $('.cursor_div').removeClass('go_top');
-// });
+let svg_file;
+if(location.href.indexOf('en') < 0){ //日本語サイトの場合
+    svg_file = '<img src="img/open_in_new_white_24dp.svg">';
+}else{ //英語サイトの場合
+    svg_file = '<img src="../img/open_in_new_white_24dp.svg">';
+}
+$('.box p, .box').hover(function(){
+    
+    $('.cursor_div div').html(svg_file);
+    $('.cursor_div').addClass('go_top');
+});
+$('.box p, .box').mouseout(function(){
+    $('.cursor_div div').html('<p class="go_top_icon">△</p>');
+    $('.cursor_div').removeClass('go_top');
+});
 
