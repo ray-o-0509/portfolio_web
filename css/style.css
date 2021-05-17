@@ -76,6 +76,36 @@ main {
     line-height: 120%;
     text-align: left;
 }
+.language_text{
+    position: relative;
+}
+
+.language_text p {
+    position: relative;
+    z-index: 10;
+}
+
+.language_text::after {
+    content: '';
+    width: calc(100% + 2px);
+    height: 1rem;
+    background: #A1E3FF;
+    position: absolute;
+    bottom: 0;
+    left: -1px;
+    z-index: 2;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+}
+
+.language_text:hover::after {
+  transform-origin: right top;
+  transform: scale(1, 1);
+}
+.language_text:hover .cursor_div{
+    display: none;
+}
 
 .language_grey{
     color: #D6D6D6;
