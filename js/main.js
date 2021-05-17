@@ -78,6 +78,10 @@ $('.box p, .box').mouseout(function(){
 
 let dark_mode = false;
 
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) { //ios darkmode
+    change_mode();
+}
+
 // ?dark_mode = の判断
 if(location.href.indexOf('?dark_mode=true') < 0){
     dark_mode = true;
