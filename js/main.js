@@ -15,7 +15,10 @@ $(function() {
 
 $('#menu_text_0, .go_to_top').click(function(){
     $("html,body").animate({
-        scrollTop:$('body').offset().top - 100
+        scrollTop:$('body').offset().top - 100,
+        complete: function() {
+            $( "body" ).trigger( "click" );
+        }
     });
 });
 $('#menu_text_1').click(function(){
