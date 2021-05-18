@@ -405,3 +405,28 @@ footer p{
     width: 1.8rem;
     height: 1.8rem;
 }
+
+
+
+/* darkmode transiton */
+
+body, html{
+    transition: color 2s, background 2s;
+}
+a, .cursor_div.go_top .go_top_icon, .language_grey, .scroll_to, .sections div h2, .go_to_top:hover, footer p, .links_box a{
+    transition: color 2s;
+}
+.sections div h1{
+    transition: -webkit-text-strok 2s;
+}
+.icon_svg:hover .icon_svg_fill, .icon_svg_fill{
+    transition: fill 2s;
+}
+
+.box, .bd div, .border_box div:before,.border_box div:after, scroll_circle, .scroll_section li::after{
+    transition: background 2s;
+}
+
+.scroll_bar, .scroll_circle {
+    transition: background-color 2s;
+}
