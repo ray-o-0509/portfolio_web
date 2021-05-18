@@ -109,7 +109,12 @@ function change_mode (){
 
     dark_mode = !dark_mode;
 }
-
+$(document).keypress(function(event){
+    var keycode = (event.keyCode ? event.keyCode : event.which);
+    if(keycode == '68'){
+        change_mode();    
+    }
+});
 
 
 
