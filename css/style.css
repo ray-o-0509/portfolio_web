@@ -208,19 +208,18 @@ main {
     width: 26px;
     height: 26px;
     margin: 2px 32px 2px 2px;
-    transition: all .1s;
+    transition: width .1s, height .1s, margin .1s, fill 2s;
 }
 .icon_svg:hover{
     width: 30px;
     height: 30px;
     margin: 0 30px 0 0;
-    margin-right: 30px;
+    transition: fill 2s;
 }
 .icon_svg:hover .icon_svg_fill {
     fill: #89DEFF;
+    transition: fill 2s;
 }
-
-
 
 /* ************* */
 /* link section  */
@@ -419,11 +418,8 @@ a, .cursor_div.go_top .go_top_icon, .language_grey, .scroll_to, .sections div h2
 .sections div h1{
     transition: -webkit-text-strok 2s;
 }
-.icon_svg:hover .icon_svg_fill, .icon_svg_fill{
-    transition: fill 2s;
-}
 
-.box, .bd div, .border_box div:before,.border_box div:after, scroll_circle, .scroll_section li::after{
+.scroll_circle{
     transition: background 2s;
 }
 
