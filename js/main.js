@@ -111,7 +111,7 @@ function change_mode (){
 }
 $(document).keypress(function(event){
     var keycode = (event.keyCode ? event.keyCode : event.which);
-    if(keycode == '68'){
+    if(keycode == '100'){
         change_mode();    
     }
 });
