@@ -160,7 +160,10 @@ main {
   transform-origin: right top;
   transform: scale(1, 1);
 }
-.scroll_section li:hover .cursor_div, .icon_svg:hover .cursor_div{
+.scroll_section li:hover .cursor_div{
+    display: none;
+}
+.icon_svg:hover .cursor_div {
     display: none;
 }
 
@@ -208,17 +211,17 @@ main {
     width: 26px;
     height: 26px;
     margin: 2px 32px 2px 2px;
-    transition: width .1s, height .1s, margin .1s, fill .1s;
+    transition: width .1s, height .1s, margin .1s, fill 2s;
 }
 .icon_svg:hover{
     width: 30px;
     height: 30px;
     margin: 0 30px 0 0;
-    transition: fill 2s;
+    transition: fill .1s;
 }
 .icon_svg:hover .icon_svg_fill {
     fill: #89DEFF;
-    transition: fill 2s;
+    transition: fill .1s;
 }
 
 /* ************* */
