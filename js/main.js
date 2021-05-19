@@ -69,7 +69,7 @@ $('.box p, .box').hover(function(){
     $('.cursor_div').addClass('go_top');
 });
 $('.box p, .box').mouseout(function(){
-    $('.cursor_div div').html('<p class="go_top_icon">△</p>');
+    $('.cursor_div div').html('<p class="go_top_icon">▲</p>');
     $('.cursor_div').removeClass('go_top');
 });
 
