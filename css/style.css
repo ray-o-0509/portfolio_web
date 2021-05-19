@@ -208,7 +208,7 @@ main {
     width: 26px;
     height: 26px;
     margin: 2px 32px 2px 2px;
-    transition: width .1s, height .1s, margin .1s, fill 2s;
+    transition: width .1s, height .1s, margin .1s, fill .1s;
 }
 .icon_svg:hover{
     width: 30px;
