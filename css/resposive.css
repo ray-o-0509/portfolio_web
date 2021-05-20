@@ -1,0 +1,98 @@
+@media only screen and (max-width: 600px) {
+  body,
+  html {
+    font-size: 15px;
+  }
+  main {
+    width: auto;
+    margin: 0 20px;
+  }
+  .about_text {
+    font-size: 12px;
+  }
+  .sections div h1 {
+    font-size: 70px;
+    margin-top: 200px;
+    /* -webkit-text-stroke: 2px #333; */
+  }
+  .logo_image{
+    width: 100px;
+    height: 100px;
+  }
+  .sections div h2 {
+    font-size: 70px;
+  }
+  .icon_svg {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 0 0;
+  }
+  .icon_svg:hover {
+    width: 24px;
+    height: 24px;
+    margin: 0 20px 0 0;
+  }
+  .go_to_top {
+    font-size: 15px;
+  }
+  .links_box a {
+    font-size: 14px;
+  }
+  .scroll_div{
+    right: 3px;
+  }
+  footer p {
+    margin-bottom: 40px;
+    font-size: 10px;
+  }
+  .cursor_div {
+    display: none;
+    opacity: 0;
+  }
+  .main_logo p{
+    font-size: 36px;
+    margin-left: 40px;
+  }
+  .main_logo{
+    margin-left: 20px;
+    justify-content: start;
+    justify-self: center;
+  }
+  .sub_title{
+    font-size: 14px;
+  }
+  .scroll_to{
+    font-size: 12px;
+  }
+  .scroll_section{
+    width: calc(100% - 60px);
+    margin: auto 30px 260px;
+  }
+  .scroll_section li{
+    font-size: 12px;
+  }
+  .scroll_section li::after{
+    bottom: 12px;
+    height: 8px;
+  }
+  header div p{
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  header{
+    width: 88%;
+    padding: 5px 6%;
+  }
+  .arrow{
+    height: 60px;
+  }
+  .mode_change_div {
+    margin: 0 15px 0;
+    width: 20px;
+    height: 20px;
+  }
+  header a h1{
+    font-size: 16px;
+    line-height: 100%;
+  }
+}

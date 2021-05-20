@@ -27,6 +27,7 @@ header{
     justify-content: space-between;
     padding: 10px 3%;
     height: 60px;
+    align-items: center;
 }
 
 header h1{
@@ -127,6 +128,7 @@ main {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    padding: 0;
 
 }
 .scroll_section li{
