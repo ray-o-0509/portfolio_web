@@ -122,8 +122,8 @@ $(document).keypress(function(event){
 function change_language (){
     console.log('test');
     if(location.href.indexOf('en') < 0){ //日本語サイトの場合
-        location.href = "en/index.html?dark_mode=" + dark_mode;
+        location.href = "en/?dark_mode=" + dark_mode;
     }else{ //英語サイトの場合
-        location.href = "../index.html?dark_mode=" + dark_mode;
+        location.href = "../?dark_mode=" + dark_mode;
     }
 }
