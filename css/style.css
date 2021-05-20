@@ -382,6 +382,7 @@ footer p{
     border-radius: 50%;
     pointer-events: none;
     transition: height .2s,  width .2s, opacity .1s;
+    overflow: hidden;
 }
 .cursor_div .go_top_icon{
     color: transparent;
