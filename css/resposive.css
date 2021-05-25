@@ -5,7 +5,7 @@
     }
     main {
         width: auto;
-        margin: 0 20px;
+        margin: 0 40px;
     }
     .about_text {
         font-size: 12px;
@@ -39,7 +39,8 @@
         font-size: 14px;
     }
     .scroll_div {
-        right: 3px;
+        right: auto;
+        left: 3px;
     }
     footer p {
         margin-bottom: 40px;
