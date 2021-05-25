@@ -67,3 +67,12 @@ footer p{
 .cursor_div.go_top .go_top_icon{
     color: #ffffff;
 }
+
+
+.works_inner{
+    background: #161616;
+    color: white;
+}
+.works{
+    filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.15));
+}

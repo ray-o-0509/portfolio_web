@@ -54,15 +54,15 @@ header div p{
 
 
 main {
-    width: 500px;
+    width: 680px;
     margin: 0 auto;
 }
 
 
 .main_logo{
-    margin-top: 20vh;
+    margin: 20vh 15% 0;
     display: flex;
-    width: 100%;
+    width: 70%;
     justify-content: space-between;
     align-items: center;
 }
@@ -226,6 +226,83 @@ main {
 .icon_svg:hover .icon_svg_fill {
     fill: #89DEFF;
     transition: fill .1s;
+}
+
+
+/* ************** */
+/* works section  */
+/* ************** */
+
+.works_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works{
+    margin: 18px 14px;
+    width: 300px;
+    height: 420px;
+    position: relative;
+    padding: 1px;
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.15));
+    transition: filter .4s;
+}
+.works:nth-child(odd){
+    background: linear-gradient(320.02deg, #007BFF 8.89%, #01CAF8 79.42%);
+}
+
+.works:nth-child(even){
+    background: linear-gradient(140.02deg, #007BFF 8.89%, #01CAF8 79.42%);
+}
+.works_inner{
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 258px;
+    height: 368px;
+    background: white;
+    padding: 25px 20px;
+    text-align: center;
+    color: #333;
+}
+
+.works_image{
+    width: 100%;
+}
+.works_title{
+    text-align: left;
+    width: 100%;
+    font-size: 17px;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    margin: 27px 0 10px;
+}
+
+.works_description{
+    text-align: left;
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: 'Noto Sans JP', sans-serif;
+    letter-spacing: 0.05em;
+    margin: 0 0 30px;
+}
+
+.event_section img{
+    width: 90px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.event_section img:hover{
+    filter: drop-shadow(0px 0px 5px rgba(0, 204, 255, 0.5));
+}
+
+.works:hover{
+    filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.15));
 }
 
 /* ************* */
@@ -422,7 +499,7 @@ footer p{
 
 /* darkmode transiton */
 
-body, html{
+body, html, .works_inner{
     transition: color 2s, background 2s;
 }
 a, .cursor_div.go_top .go_top_icon, .language_grey, .scroll_to, .sections div h2, .go_to_top:hover, footer p, .links_box a{
