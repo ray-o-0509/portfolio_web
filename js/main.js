@@ -73,6 +73,16 @@ $('.box p, .box').mouseout(function(){
     $('.cursor_div').removeClass('go_top');
 });
 
+$('.ref_text').hover(function(){
+    
+    $('.cursor_div div').html(svg_file);
+    $('.cursor_div').addClass('go_top');
+});
+$('.ref_text').mouseout(function(){
+    $('.cursor_div div').html('<p class="go_top_icon">▲</p>');
+    $('.cursor_div').removeClass('go_top');
+});
+
 
 
 
